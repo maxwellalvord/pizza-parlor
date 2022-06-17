@@ -8,6 +8,20 @@ Pizza.prototype.getCost = function (size, top){
   let cost = 0;
   if ((size == "Medium") && (top == "Pepperoni")) {
     cost += 10;
+  } else if ((size == "Medium") && (top == "Olives")){
+
+  } else if ((size == "Medium") && (top == "Bacon")){
+    
+  }  else if ((size == "Medium") && (top == "Bacon")){
+    
+  }  else if ((size == "Medium") && (top == "Cheese")){
+    
+  }  else if ((size == "Small") && (top == "Bacon")){
+    
+  }  else if ((size == "Small") && (top == "Bacon")){
+    
+  }  else if ((size == "Small") && (top == "Bacon")){
+    
   }
   console.log(cost);
 }
