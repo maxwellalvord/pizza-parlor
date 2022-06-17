@@ -6,21 +6,21 @@ function Pizza(size, topping, topping2) {
 }
 let cost = 0;
 Pizza.prototype.getCost = function (size, top, top2){
-  if ((size == "Medium") && (top == "Pepperoni") && (top2 == "")) {
+  if ((size == "Medium") && (top == "Pepperoni") && (top2 == "None")) {
     cost += 10;
-  } else if ((size == "Medium") && (top == "Olives") && (top2 == "")){
+  } else if ((size == "Medium") && (top == "Olives") && (top2 == "None")){
     cost += 9;
-  } else if ((size == "Medium") && (top == "Bacon") && (top2 == "")){
+  } else if ((size == "Medium") && (top == "Bacon") && (top2 == "None")){
     cost += 8;
-  } else if ((size == "Medium") && (top == "Cheese") && (top2 == "")){
+  } else if ((size == "Medium") && (top == "Cheese") && (top2 == "None")){
     cost += 7;
-  } else if ((size == "Small") && (top == "Cheese") && (top2 == "")){
+  } else if ((size == "Small") && (top == "Cheese") && (top2 == "None")){
     cost += 6;
-  } else if ((size == "Small") && (top == "Bacon") && (top2 == "")){
+  } else if ((size == "Small") && (top == "Bacon") && (top2 == "None")){
     cost += 5;
-  } else if ((size == "Small") && (top == "Pepperoni") && (top2 == "")){
+  } else if ((size == "Small") && (top == "Pepperoni") && (top2 == "None")){
     cost += 4;
-  } else if ((size == "Small") && (top == "Olives") && (top2 == "")){
+  } else if ((size == "Small") && (top == "Olives") && (top2 == "None")){
     cost += 3;
   } else if ((size == "Medium") && (top == "Pepperoni") && (top2 == "Pepperoni")) {
     cost += 20;
@@ -97,6 +97,7 @@ $(document).ready(function() {
     $("select").hide();
     $("h4").show();
     $("h5").show();
+    $("h6").show();
     $("#subform").hide();
     $("#reset").show();
     const psize = $("#size").val();
