@@ -40,3 +40,18 @@ let cost = 0;
 if ((size == "Medium") && (top == "Pepperoni")) {
 cost += 10;
 Expected Output: console.log for cost when you order a medium pepperoni should be 10, medium Olives is 9 and so on for bacon and Cheese on medium.
+
+
+Test: "it should provide full application functionality by letting you to select your pizza properties and then repeat them back and give a price."
+Code: let newPizza = new Pizza(psize, top);
+const psize = $("#size").val();
+const top = $("#top").val();
+Pizza.prototype.getCost = function (size, top){}
+let cost = 0;
+Expected Output: Your pizza will have the following properties!
+{"size":"Small","topping":"Pepperoni"}
+
+The dollar amount of your Pizza is:
+4
+(this will change depending on size and topping).
+

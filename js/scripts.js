@@ -3,9 +3,8 @@ function Pizza(size, topping) {
   this.size = size;
   this.topping = topping;
 }
-
+let cost = 0;
 Pizza.prototype.getCost = function (size, top){
-  let cost = 0;
   if ((size == "Medium") && (top == "Pepperoni")) {
     cost += 10;
   } else if ((size == "Medium") && (top == "Olives")){
@@ -36,11 +35,16 @@ $(document).ready(function() {
     $("label").hide();
     $("select").hide();
     $("h4").show();
+    $("h5").show();
     const psize = $("#size").val();
     const top = $("#top").val();
     let newPizza = new Pizza(psize, top);
     $("#finalPizza").html(JSON.stringify(newPizza));
-    newPizza.getCost(newPizza.size, newPizza.topping)
-    
+    newPizza.getCost(newPizza.size, newPizza.topping);
+    $("#finalCost").html(cost)
+  });
+  $("#reset").click(function(event) {
+    event.preventDefault();
+    window.location.reload();
   });
 });
