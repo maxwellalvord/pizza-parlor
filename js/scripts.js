@@ -106,7 +106,7 @@ $(document).ready(function() {
     let newPizza = new Pizza(psize, top, top2);
     // $("#finalPizza").html(JSON.stringify(newPizza).replace(/[,'"{}]+/g, ' '));
     // both lines above and below display the object in different way, any suggestions?
-    document.getElementById("finalPizz").innerHTML = "🍕Size you selected: " + newPizza.size + "<br>" + "🍕Your first pizza topping: " + newPizza.topping + "<br>" + "🍕Heres the second topping if you got one: " + newPizza.topping2;
+    document.getElementById("finalPizz").innerHTML = "🍕Size you selected: " + newPizza.size + "🍕<br>" + "🍕Your first pizza topping: " + newPizza.topping + "🍕<br>" + "🍕Heres the second topping if you got one: " + newPizza.topping2 + "🍕";
     newPizza.getCost(newPizza.size, newPizza.topping, newPizza.topping2);
     $("#finalCost").html(cost)
     

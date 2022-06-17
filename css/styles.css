@@ -1,20 +1,36 @@
 h4{
   display: none;
+  text-align: center;
+  color: #43afee;
 }
 
 h5 {
   display: none;
+  text-align: center;
+  color: #43afee;
 }
 button#subform{
-  display: block;
-  text-align: center;
+  margin-left: 40.25%;
 }
 button#reset{
   display: none;
+  margin-left: 42%;
 }
 
 h6{
   display: none;
+  text-align: center;
+  color: #43afee;
+}
+p#finalPizz{
+  text-align: center;
+  color: #43afee;
+}
+
+#finalCost{
+  text-align: center;
+  color: #43afee;
+  font-size: larger;
 }
 
 body{
@@ -36,5 +52,6 @@ select{
   color: #43afee;
   text-align: center;
   background: linear-gradient(to right,#1f1d88, #19726e, #570d4d);
+  margin-top: 2%;
   
 }
