@@ -1,3 +1,23 @@
+body{
+  background: linear-gradient(to right,#570d4d, #19726e, #1f1d88);
+}
+
+footer{
+  text-align: center;
+  color: #43afee;
+}
+
+select{
+  display: block;
+  text-align: center;
+}
+
+label{
+  display: block;
+  color: #43afee;
+  text-align: center;
+}
+
 h4{
   display: none;
   text-align: center;
@@ -9,19 +29,21 @@ h5 {
   text-align: center;
   color: #43afee;
 }
-button#subform{
-  margin-left: 40.25%;
-}
-button#reset{
-  display: none;
-  margin-left: 42%;
-}
 
 h6{
   display: none;
   text-align: center;
   color: #43afee;
 }
+
+button#subform{
+  margin-left: 41.25%;
+}
+button#reset{
+  display: none;
+  margin-left: 42.25%;
+}
+
 p#finalPizz{
   text-align: center;
   color: #43afee;
@@ -33,31 +55,11 @@ p#finalPizz{
   font-size: larger;
 }
 
-body{
-  background: linear-gradient(to right,#570d4d, #19726e, #1f1d88);
-}
-
-label{
-  display: block;
-  color: #43afee;
-  text-align: center;
-}
-
-select{
-  display: block;
-  text-align: center;
-}
-
 .jumbotron{
   color: #43afee;
   text-align: center;
   background: linear-gradient(to right,#1f1d88, #19726e, #570d4d);
   margin-top: 2%;
-}
-
-footer{
-  text-align: center;
-  color: #43afee;
 }
 
 .container{

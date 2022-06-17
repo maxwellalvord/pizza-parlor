@@ -100,6 +100,7 @@ $(document).ready(function() {
     $("h6").show();
     $("#subform").hide();
     $("#reset").show();
+    $("#photo").show();
     const psize = $("#size").val();
     const top = $("#top").val();
     const top2 = $("#top2").val();
