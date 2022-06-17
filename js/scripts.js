@@ -1,7 +1,8 @@
 // Business Logic
-function Pizza(size, topping) {
+function Pizza(size, topping, topping2) {
   this.size = size;
   this.topping = topping;
+  this.topping2 = topping2;
 }
 let cost = 0;
 Pizza.prototype.getCost = function (size, top){
@@ -38,9 +39,10 @@ $(document).ready(function() {
     $("h5").show();
     const psize = $("#size").val();
     const top = $("#top").val();
-    let newPizza = new Pizza(psize, top);
+    const top2 = $("#top2").val();
+    let newPizza = new Pizza(psize, top, top2);
     $("#finalPizza").html(JSON.stringify(newPizza));
-    newPizza.getCost(newPizza.size, newPizza.topping);
+    newPizza.getCost(newPizza.size, newPizza.topping, newPizza.topping2);
     $("#finalCost").html(cost)
   });
   $("#reset").click(function(event) {
