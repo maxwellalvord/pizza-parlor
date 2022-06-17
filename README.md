@@ -13,7 +13,7 @@ A simple html page for the user to be able buy a pizza by inputting a size and o
 
 ## Description
 
-This page will allow the user to input a size and toppings for a pizza and get a recipt of hwat they ordered and how much it costs in German Francs.
+This page will allow the user to input a size and toppings for a pizza and get a receipt of what they ordered and how much it costs in German Francs.
 
 ## Setup/Installation Requirements
 
@@ -25,7 +25,7 @@ This page will allow the user to input a size and toppings for a pizza and get a
 * Visit the [gh-pages](https://maxwellalvord.github.io/pizza-parlor/)
 
 ## Known Bugs
-* Webpage will crash if inputted number is 1,000,000 or more, limit set to error at 10,000.
+* No Cookies are saved when page is reloaded causing data to be lost if user accidentally refreshes page.
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)

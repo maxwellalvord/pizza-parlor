@@ -5,11 +5,36 @@ h4{
 h5 {
   display: none;
 }
-
+button#subform{
+  display: block;
+  text-align: center;
+}
 button#reset{
   display: none;
 }
 
 h6{
   display: none;
+}
+
+body{
+  background: linear-gradient(to right,#570d4d, #19726e, #1f1d88);
+}
+
+label{
+  display: block;
+  color: #43afee;
+  text-align: center;
+}
+
+select{
+  display: block;
+  text-align: center;
+}
+
+.jumbotron{
+  color: #43afee;
+  text-align: center;
+  background: linear-gradient(to right,#1f1d88, #19726e, #570d4d);
+  
 }
