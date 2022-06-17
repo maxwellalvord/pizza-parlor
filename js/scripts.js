@@ -1,7 +1,7 @@
 // Business Logic
-function Pizza(topping, size) {
-  this.topping = topping;
+function Pizza(size, topping) {
   this.size = size;
+  this.topping = topping;
 }
 
 
@@ -13,9 +13,12 @@ function Pizza(topping, size) {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
+    $("label").hide();
+    $("select").hide();
     const psize = $("#size").val();
     const top = $("#top").val();
-    let newPizaa = new Pizza(psize, top);
+    let newPizza = new Pizza(psize, top);
+    $("#finalPizza").html(JSON.stringify(newPizza));
     
   });
 });
