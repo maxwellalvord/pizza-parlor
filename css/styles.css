@@ -55,6 +55,16 @@ p#finalPizz{
   font-size: larger;
 }
 
+#foot{
+  width: 1000px;
+  border: 15px solid #43afee;
+  padding: 50px;
+  margin: 10px;
+  margin-left: 23%;
+  margin-top: 0%;
+  margin-bottom: 10%;
+}
+
 .jumbotron{
   color: #43afee;
   text-align: center;
