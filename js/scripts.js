@@ -9,19 +9,19 @@ Pizza.prototype.getCost = function (size, top){
   if ((size == "Medium") && (top == "Pepperoni")) {
     cost += 10;
   } else if ((size == "Medium") && (top == "Olives")){
-
+    cost += 9;
   } else if ((size == "Medium") && (top == "Bacon")){
-    
-  }  else if ((size == "Medium") && (top == "Bacon")){
-    
-  }  else if ((size == "Medium") && (top == "Cheese")){
-    
-  }  else if ((size == "Small") && (top == "Bacon")){
-    
-  }  else if ((size == "Small") && (top == "Bacon")){
-    
-  }  else if ((size == "Small") && (top == "Bacon")){
-    
+    cost += 8;
+  } else if ((size == "Medium") && (top == "Cheese")){
+    cost += 7;
+  } else if ((size == "Small") && (top == "Cheese")){
+    cost += 6;
+  } else if ((size == "Small") && (top == "Bacon")){
+    cost += 5;
+  } else if ((size == "Small") && (top == "Pepperoni")){
+    cost += 4;
+  } else if ((size == "Small") && (top == "Olives")){
+    cost += 3;
   }
   console.log(cost);
 }

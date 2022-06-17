@@ -21,7 +21,7 @@ const top = $("#top").val();
 Pizza.prototype.getCost = function (size, top){}
 Expected Output: Pizza { toppings: "Pepperoni", size: "medium" } // whatever user input variable is console logged in getCost().
 
-Test: "It should take the properties from new pizza use else if statments to determine a cost for the pizza."
+Test: "It should take the properties from new pizza use else if statements to determine a cost for the pizza."
 Code: let newPizza = new Pizza(psize, top);
 const psize = $("#size").val();
 const top = $("#top").val();
@@ -30,3 +30,13 @@ let cost = 0;
 if ((size == "Medium") && (top == "Pepperoni")) {
 cost += 10;
 Expected Output: console.log for cost when you order a medium pepperoni should be 10.
+
+Test: "It should take the properties from new pizza and use else if statements to determine a cost for different kinds of pizza."
+Code: let newPizza = new Pizza(psize, top);
+const psize = $("#size").val();
+const top = $("#top").val();
+Pizza.prototype.getCost = function (size, top){}
+let cost = 0;
+if ((size == "Medium") && (top == "Pepperoni")) {
+cost += 10;
+Expected Output: console.log for cost when you order a medium pepperoni should be 10, medium Olives is 9 and so on for bacon and Cheese on medium.
