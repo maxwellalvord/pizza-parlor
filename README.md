@@ -28,7 +28,7 @@ This page will allow the user to input a size and toppings for a pizza and get a
 * No Cookies are saved when page is reloaded causing data to be lost if user accidentally refreshes page.
 
 ## License
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](https://opensource.org/osd)
 
 Copyright &copy;
 2022 Maxwell Alvord

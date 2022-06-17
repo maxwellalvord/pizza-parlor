@@ -53,5 +53,13 @@ select{
   text-align: center;
   background: linear-gradient(to right,#1f1d88, #19726e, #570d4d);
   margin-top: 2%;
-  
+}
+
+footer{
+  text-align: center;
+  color: #43afee;
+}
+
+.container{
+  font-family: 'Times New Roman', Times, serif;
 }
