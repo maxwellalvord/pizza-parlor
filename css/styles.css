@@ -5,3 +5,7 @@ h4{
 h5 {
   display: none;
 }
+
+button#reset{
+  display: none;
+}
