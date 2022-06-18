@@ -6,86 +6,53 @@ function Pizza(size, topping, topping2) {
 }
 let cost = 0;
 Pizza.prototype.getCost = function (size, top, top2){
-  if ((size == "Medium") && (top == "Pepperoni") && (top2 == "None")) {
-    cost += 10;
-  } else if ((size == "Medium") && (top == "Olives") && (top2 == "None")){
-    cost += 9;
-  } else if ((size == "Medium") && (top == "Bacon") && (top2 == "None")){
-    cost += 8;
-  } else if ((size == "Medium") && (top == "Cheese") && (top2 == "None")){
-    cost += 7;
-  } else if ((size == "Small") && (top == "Cheese") && (top2 == "None")){
-    cost += 6;
-  } else if ((size == "Small") && (top == "Bacon") && (top2 == "None")){
-    cost += 5;
-  } else if ((size == "Small") && (top == "Pepperoni") && (top2 == "None")){
-    cost += 4;
-  } else if ((size == "Small") && (top == "Olives") && (top2 == "None")){
-    cost += 3;
-  } else if ((size == "Medium") && (top == "Pepperoni") && (top2 == "Pepperoni")) {
-    cost += 20;
-  } else if ((size == "Medium") && (top == "Olives") && (top2 == "Pepperoni")){
-    cost += 19;
-  } else if ((size == "Medium") && (top == "Bacon") && (top2 == "Pepperoni")){
-    cost += 18;
-  } else if ((size == "Medium") && (top == "Cheese") && (top2 == "Pepperoni")){
-    cost += 17;
-  } else if ((size == "Small") && (top == "Cheese") && (top2 == "Pepperoni")){
-    cost += 16;
-  } else if ((size == "Small") && (top == "Bacon") && (top2 == "Pepperoni")){
-    cost += 15;
-  } else if ((size == "Small") && (top == "Pepperoni") && (top2 == "Pepperoni")){
-    cost += 14;
-  } else if ((size == "Small") && (top == "Olives") && (top2 == "Pepperoni")){
-    cost += 13;
-  } else if ((size == "Medium") && (top == "Pepperoni") && (top2 == "Olives")) {
-    cost += 30;
-  } else if ((size == "Medium") && (top == "Olives") && (top2 == "Olives")){
-    cost += 29;
-  } else if ((size == "Medium") && (top == "Bacon") && (top2 == "Olives")){
-    cost += 28;
-  } else if ((size == "Medium") && (top == "Cheese") && (top2 == "Olives")){
-    cost += 27;
-  } else if ((size == "Small") && (top == "Cheese") && (top2 == "Olives")){
-    cost += 26;
-  } else if ((size == "Small") && (top == "Bacon") && (top2 == "Olives")){
-    cost += 25;
-  } else if ((size == "Small") && (top == "Pepperoni") && (top2 == "Olives")){
-    cost += 24;
-  } else if ((size == "Small") && (top == "Olives") && (top2 == "Olives")){
-    cost += 23;
-  } else if ((size == "Medium") && (top == "Pepperoni") && (top2 == "Bacon")) {
-    cost += 40;
-  } else if ((size == "Medium") && (top == "Olives") && (top2 == "Bacon")){
-    cost += 49;
-  } else if ((size == "Medium") && (top == "Bacon") && (top2 == "Bacon")){
-    cost += 48;
-  } else if ((size == "Medium") && (top == "Cheese") && (top2 == "Bacon")){
-    cost += 47;
-  } else if ((size == "Small") && (top == "Cheese") && (top2 == "Bacon")){
-    cost += 46;
-  } else if ((size == "Small") && (top == "Bacon") && (top2 == "Bacon")){
-    cost += 45;
-  } else if ((size == "Small") && (top == "Pepperoni") && (top2 == "Bacon")){
-    cost += 44;
-  } else if ((size == "Small") && (top == "Olives") && (top2 == "Bacon")){
-    cost += 43;
-  } else if ((size == "Medium") && (top == "Pepperoni") && (top2 == "Cheese")) {
-    cost += 50;
-  } else if ((size == "Medium") && (top == "Olives") && (top2 == "Cheese")){
-    cost += 59;
-  } else if ((size == "Medium") && (top == "Bacon") && (top2 == "Cheese")){
-    cost += 58;
-  } else if ((size == "Medium") && (top == "Cheese") && (top2 == "Cheese")){
-    cost += 57;
-  } else if ((size == "Small") && (top == "Cheese") && (top2 == "Cheese")){
-    cost += 56;
-  } else if ((size == "Small") && (top == "Bacon") && (top2 == "Cheese")){
-    cost += 55;
-  } else if ((size == "Small") && (top == "Pepperoni") && (top2 == "Cheese")){
-    cost += 54;
-  } else if ((size == "Small") && (top == "Olives") && (top2 == "Cheese")){
-    cost += 53;
+  switch(size) {
+    case "Small":
+      cost += 5;
+      console
+      break;
+    case "Medium":
+      cost += 8;
+      break;
+    default:
+      throw Error("Invalid size");
+  }
+
+  switch(top) {
+    case "Olives":
+      cost += 2;
+      break;
+    case "Bacon":
+      cost += 3;
+      break;
+    case "Cheese":
+        cost += 1;
+        break;
+    case "Pepperoni":
+        cost += 4;
+        break;
+    default:
+      throw Error("At Least one topping");
+  }
+
+  switch(top2) {
+    case "Olives":
+      cost += 2;
+      break;
+    case "Bacon":
+      cost += 3;
+      break;
+    case "Cheese":
+        cost += 1;
+        break;
+    case "pepperoni":
+        cost += 4;
+        break;
+    case "None":
+        cost += 0;
+        break;
+    default:
+      throw Error("Select None if no second topping is desired");
   }
 }
  
