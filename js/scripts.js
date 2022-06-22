@@ -45,7 +45,7 @@ Pizza.prototype.getCost = function (size, top, top2){
     case "Cheese":
         cost += 1;
         break;
-    case "pepperoni":
+    case "Pepperoni":
         cost += 4;
         break;
     case "None":
